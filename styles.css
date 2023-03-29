@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;600&display=swap');
+
+
+:root {
+    /* COLORS */
+    --main-color: hsl(273, 85%, 13%);
+    --accent-color: hsl(150, 100%, 63%);
+    --text-color: hsl(271, 12%, 34%);
+    --text-color-2: hsl(0, 0%, 100%);
+    --bg-color: hsl(276, 100%, 99%);
+
+    /* TYPOGRAPHY */
+    --heading-L: 80px;
+    --line-space-L: 80px;
+
+    --heading-M: 56px;
+    --line-space-M: 64px;
+
+    --heading-S: 32px;
+    --line-space-S: 40px;
+}
+
+body {
+    font-family: 'Fraunces', serif;
+}
