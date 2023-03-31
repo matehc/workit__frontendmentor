@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;600&display=swap');
 
 
+/* RESETS FOR ALL ELEMENT */
+*,
+*::before,
+ *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
 :root {
     /* COLORS */
     --main-color: hsl(273, 85%, 13%);
@@ -22,4 +32,150 @@
 
 body {
     font-family: 'Fraunces', serif;
+    font-size: 18px;
 }
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.btn:hover{
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--main-color);
+}
+
+/* h2 {
+    font-size: 2rem;
+font-size: clamp(2rem, 0.943661971830986rem + 4.507042253521126vw, 5rem);
+} */
+
+/* 
+================
+#ABOUT SECTION
+================
+*/
+
+
+.about-founder-section{
+    margin-block-start: 100px;
+    margin-block-end: 74px;
+}
+
+.wrapper {
+    width: 91.5%;
+    margin:0 auto;
+}
+
+.about__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.image__founder {
+    position: absolute;
+    top: 0;
+    width: 281px;
+    height: 281px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+.about__container{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-2);
+    background-color: var(--main-color);
+    margin-block-start: 240px;
+}
+
+.about__heading {
+    margin-block-end: 16px;
+    line-height: 48px;
+}
+
+.about__text {
+    margin-block-end: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.about-btn {
+    padding: 12px 23.5px;
+}
+
+.about__rings{
+    position: absolute;
+    display: none;
+}
+
+
+
+@media (min-width: 37.5em) {
+    .wrapper{
+        width: 89.7%
+    }
+
+    .about__content {
+        flex: unset;
+    }
+
+    .about__container {
+        position: relative;
+        padding: 56px 56px;
+        width: 514px;
+        margin-left: auto;
+    }
+
+    .image__founder {
+        top: 90px;
+        left: 0;
+        transform: unset;
+    }
+
+    .about__heading,
+    .about-btn {
+        margin-right: auto;
+    }
+
+    .about__heading {
+        font-size: 2.5rem;
+    }
+
+    .about__text
+    {
+        text-align: start;
+    }
+
+    .about__rings {
+        top: 269px;
+        right: 12.69px;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
