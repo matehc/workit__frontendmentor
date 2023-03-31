@@ -170,7 +170,39 @@ font-size: clamp(2rem, 0.943661971830986rem + 4.507042253521126vw, 5rem);
 
 
 
+@media (min-width: 62.5em) {
+    .wrapper {
+        width: 77.22%;
+    }
 
+
+
+    .image__founder {
+        width: 477px;
+        height: 477px;
+        top: 70px;
+        /* left: ; */
+    }
+
+    .about__container {
+        padding: 56px 56px;
+        width: 730px;
+        /* margin-left: unset; */
+    }
+
+    .about__heading {
+        font-size: 56px;
+        margin-block-end: 32px;
+    }
+
+    .about__text {
+        margin-block-end: 32px;
+    }
+    
+    .about__rings{
+        top: 263px;
+    }
+}
 
 
 
